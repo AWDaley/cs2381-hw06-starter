@@ -35,7 +35,7 @@ public record Expr(String text) {
                 continue;
             }
 
-            if (ch.equals(")")) {    5
+            if (ch.equals(")")) {    
                 ArrayList<String> values = new ArrayList<>();
                 while (!stack.isEmpty() && !stack.peek().equals("(")) {
                     values.add(stack.pop());
